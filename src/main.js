@@ -20,6 +20,16 @@ document.addEventListener('scroll', () => {
 const home = document.querySelector('.home__container')
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
-  console.log(1 - window.scrollY / homeHeight)
+  // console.log(1 - window.scrollY / homeHeight)
   home.style.opacity = 1 - window.scrollY / homeHeight
+});
+
+// Arrow up 버튼을 아래로 스크롤 시 투명하게 처리함
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('arrow-up_visible')
+  } else {
+    arrowUp.classList.remove('arrow-up_visible')
+  }
 });
