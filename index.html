@@ -19,12 +19,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/a79efeb437.js" crossorigin="anonymous"></script>
+<!-- Type it -->
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <!-- css -->
 <link rel="stylesheet" href="css/style.css">
 <!-- javascript -->
 <script type="module" src="src/main.js" defer></script>
 <script type="module" src="src/projects.js" defer></script>
 <script type="module" src="src/active_menu.js" defer></script>
+<script type="module" src="src/type.js" defer></script>
 </head>
 <body>
 <!-- Header -->
@@ -53,7 +56,7 @@
   <section id="home">
     <div class="home__container">
       <img class="home__avatar" src="images/profile.png" alt="Jihoon's profile">
-      <h2 class="home__title">Hello <br />I&#39;m <strong class="home__title--strong">Professional Coder</strong>, Jihoon</h2>
+      <h2 class="home__title" aria-label="Hello, I'm Great Coder Jihoon">Hello <br />I&#39;m <strong class="home__title--strong">Great Coder</strong>, Jihoon</h2>
       <p class="home__description">A software engineer currently residing in Seoul, South Korea</p>
       <a class="home__contact" href="#contact">Contact Me</a>
     </div>
