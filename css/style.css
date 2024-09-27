@@ -481,6 +481,7 @@ button:focus {
 
 /* Arrow Up */
 .arrow-up {
+  z-index: 1;
   background-color: var(--color-primary);
   position: fixed;
   bottom: 3rem;
