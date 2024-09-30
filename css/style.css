@@ -5,7 +5,7 @@
   --color-primary-variant: var(--color-gray);
   --color-accent: var(--color-blue);
   --color-accent-variant: var(--color-orange);
-  --color-text: var(--color-white);
+  --color-text: var(--color-beige);
 
   /* Background */
   --home-bg-gradient:linear-gradient(
@@ -17,10 +17,11 @@
   
   /* Colors */
   --color-white: #ffffff;
-  --color-black: #050a13;
+  --color-black: #212121;
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+  --color-beige: #fffcec;
 
   /* Size */
   --size-max-width:1200px;
@@ -40,8 +41,8 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 h1,h2,h3,p,ul {
@@ -86,7 +87,20 @@ button:focus {
 
 .description {
   font-size: 1.5rem;
+  font-weight: bold;
   margin: 0.5rem 0;
+}
+
+.description::after {
+  content: '';
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0.5rem 0;;
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-accent);
 }
 
 /* Header */
@@ -108,10 +122,18 @@ button:focus {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* 로고 애니메이션 */
+@keyframes logoRotate {  
+  0%{ transform:rotateY(0deg) }
+  50% { transform:rotateY(360deg)}
+  100%{ transform:rotateY(0deg) }  
+}
+
 .header__logo {
   display: flex;
   align-items: center;
   gap: 8px;
+  animation: logoRotate 4s  infinite
 }
 
 .header__logo__img {
@@ -125,6 +147,7 @@ button:focus {
 
 .header__toggle {
  display: none;
+ cursor: pointer;
  color: var(--color-white);
  font-size: 1.5rem;
  position: absolute;
@@ -210,6 +233,11 @@ button:focus {
 }
 
 /* About */
+.introduce {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
 .majors {
   display: flex;
   justify-content: space-between;
@@ -252,6 +280,11 @@ button:focus {
   align-items: center;
   gap: 8px;
   margin-bottom: 1rem;
+}
+
+.job > img {
+  width: 65px;
+  height: 45px;
 }
 
 .job__name {
@@ -337,6 +370,7 @@ button:focus {
 .bar_value {
   height: 3px;
   background-color: var(--color-accent);
+  box-shadow: 0px 0px 5px 0px var(--color-accent);
 }
 
 /* Work */
@@ -444,8 +478,47 @@ button:focus {
   background-color: var(--color-accent);
 }
 
+ /* Career & Education  */
+.careerEducations {
+  margin: 3rem;
+}
+
+.careerEducation {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.careerEducation:nth-child(even) .careerEducation__img {
+  order: 1;
+}
+
+.careerEducation__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.careerEducation__bubble {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.careerEducation__bubble__name {
+  color: var(--color-accent);
+  font-weight: bold;
+  filter: brightness(70%);
+}
+
+.careerEducation__explanation {
+  margin-bottom:0.5rem ;
+}
+
 /* Testimonial */
-.testimonials {
+/* .testimonials {
   margin: 3rem;
 }
 
@@ -477,6 +550,12 @@ button:focus {
   color: var(--color-accent);
   font-weight: bold;
   filter: brightness(70%);
+}  */
+
+/* Arrow up 애니메이션 */
+@keyframes up {  
+  0%{ transform: translateY(0) }
+  100%{ transform:translateY(-20px)}  
 }
 
 /* Arrow Up */
@@ -491,10 +570,11 @@ button:focus {
   height: 4.5rem;
   border-radius: 100%;
   text-align: center;
-  box-shadow: 5px 5px 0px 0px var(--color-accent);
+  box-shadow: 5px 5px 7px 0px var(--color-accent);
   transition: opacity 300ms ease-in;
   opacity: 0;
   visibility: hidden;
+  animation: up 0.5s  infinite alternate linear;
 }
 
 .arrow-up_visible {
@@ -504,6 +584,9 @@ button:focus {
 
 /* Footer */
 #contact {
+  display: flex;
+  justify-content:center;
+  align-items: center;
   position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -534,6 +617,18 @@ button:focus {
 
 .contact__link:hover {
   color: var(--color-accent);
+}
+
+.contact_qr {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+.contact_qr > img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width:768px) {
@@ -613,13 +708,21 @@ button:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .testimonial {
+  .careerEducation {
+    flex-direction: column;
+  }
+
+  .careerEducation:nth-child(even) .careerEducation__img {
+    order: 0;
+  }
+
+  /* .testimonial {
     flex-direction: column;
   }
 
   .testimonial:nth-child(even) .testimonial__img {
     order: 0;
-  }
+  }  */
 
   .arrow-up {
     font-size: 2rem;
