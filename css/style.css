@@ -32,8 +32,16 @@
   --divider-arrow:url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path></svg>');
 }
 
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+  
 }
 
 html {
@@ -41,7 +49,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pretendard-Regular';
     margin: 0;
 }
 
@@ -113,7 +121,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
   transition: all 300ms ease;
 }
 
@@ -308,7 +316,7 @@ button:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: calc(118% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 60px;
   overflow: hidden;
   line-height: 0;
@@ -373,8 +381,96 @@ button:focus {
   box-shadow: 0px 0px 5px 0px var(--color-accent);
 }
 
-/* Work */
-#work{
+/* work */
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 1.7rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+/* Arrow up 애니메이션 */
+@keyframes left {  
+  0%{ transform: translateX(0) }
+  100%{ transform:translateX(-5px)}  
+}
+
+@keyframes right {  
+  0%{ transform: translateX(0) }
+  100%{ transform:translateX(5px)}  
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-gray) !important;
+  opacity: 0.5;
+}
+
+.swiper-button-prev {
+  animation: left 0.5s infinite alternate linear;
+}
+
+.swiper-button-next {
+  animation: right 0.5s infinite alternate linear;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 4rem !important;
+  font-weight: bold !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(27, 30, 38, 0.606) !important;
+}
+
+.work-title {
+  margin: 0.5rem;
+}
+
+.work-period {
+  color: #7777fd
+}
+
+.work-explanation {
+  margin: 0.5rem 0;
+}
+
+.work-skills {
+  color: var(--color-white);
+  margin: 2rem 0;
+  display: flex;
+  justify-content:space-between;
+  gap: 1rem;
+  font-size: 12px;
+  cursor: pointer;;
+}
+
+.work-skills > li {
+  background-color: rgba(27, 30, 38, 0.606);
+  border-radius: 7px;
+  padding: 8px 15px;
+  transition: all 200ms ease-in;
+}
+
+.work-skills > li:hover {
+  transform: scale(1.1);
+}
+
+/* Project */
+#project{
   background-color: var(--color-primary);
   color: var(--color-text);
 }
@@ -517,6 +613,7 @@ button:focus {
   margin-bottom:0.5rem ;
 }
 
+
 /* Testimonial */
 /* .testimonials {
   margin: 3rem;
@@ -634,6 +731,7 @@ button:focus {
 @media screen and (max-width:768px) {
   .section {
     padding:4rem 2rem;
+    text-align: center;
   }
 
   .title {

@@ -10,6 +10,7 @@ const sectionIds = [
   '#about',
   '#skills',
   '#work',
+  '#project',
   '#careerEducation',
   // '#testimonial',
   '#contact',
