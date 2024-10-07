@@ -397,6 +397,7 @@ button:focus {
 }
 
 .swiper-slide img {
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -412,27 +413,27 @@ button:focus {
   100%{ transform:translateX(5px)}  
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-btnPage .swiper-button-prev,
+.swiper-btnPage .swiper-button-next {
   color: var(--color-gray) !important;
   opacity: 0.5;
 }
 
-.swiper-button-prev {
+.swiper-btnPage .swiper-button-prev {
   animation: left 0.5s infinite alternate linear;
 }
 
-.swiper-button-next {
+.swiper-btnPage .swiper-button-next {
   animation: right 0.5s infinite alternate linear;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 4rem !important;
+.swiper-btnPage .swiper-button-prev::after,
+.swiper-btnPage .swiper-button-next::after {
+  font-size: 3rem !important;
   font-weight: bold !important;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-btnPage .swiper-pagination-bullet-active {
   background-color: rgba(27, 30, 38, 0.606) !important;
 }
 
@@ -454,14 +455,15 @@ button:focus {
   display: flex;
   justify-content:space-between;
   gap: 1rem;
-  font-size: 12px;
-  cursor: pointer;;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .work-skills > li {
   background-color: rgba(27, 30, 38, 0.606);
-  border-radius: 7px;
-  padding: 8px 15px;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
   transition: all 200ms ease-in;
 }
 
@@ -800,6 +802,21 @@ button:focus {
 
   .category {
     width: 100%;
+  }
+
+  .swiper-btnPage {
+    position: relative;
+  }
+
+  .swiper-btnPage .swiper-button-prev {
+    position: absolute;
+    top:-25px;
+    left: 12px;
+  }
+  .swiper-btnPage .swiper-button-next {
+    position: absolute;
+    top:-25px;
+    right: 12px;
   }
 
   .projects {
