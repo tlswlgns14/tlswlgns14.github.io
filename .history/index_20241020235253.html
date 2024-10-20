@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO -->
+<title>Jihoon&#39;s Portfolio</title>
+<meta name="description" content="Portfolio for world-renowned software engineer Jihoon" />
+<meta name="author" content="Jihoon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<!-- OG Open Graph Data -->
+<meta property="og:title" content="지훈의 포트폴리오" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tlswlgns14.github.io/newPortfolio/" />
+<meta property="og:image" content="https://tlswlgns14.github.io/newPortfolio/images/og.webp" />
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a79efeb437.js" crossorigin="anonymous"></script>
+<!-- Type it -->
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+<!-- swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="module" src="src/slick.js" defer></script>
+<!-- javascript -->
+<script type="module" src="src/main.js" defer></script>
+<script type="module" src="src/projects.js" defer></script>
+<script type="module" src="src/active_menu.js" defer></script>
+<script type="module" src="src/type.js" defer></script>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="header__logo">
+    <img class="header__logo__img" src="images/favicon.ico" alt="logo">
+    <h1 class="header__logo__title"><a href="#">Jihoon</a></h1>
+  </div>
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li><a class="header__menu__item active" href="#home">Home</a></li>
+      <li><a class="header__menu__item" href="#about">About</a></li>
+      <li><a class="header__menu__item" href="#skills">Skills</a></li>
+      <li><a class="header__menu__item" href="#work">Work</a></li>
+      <li><a class="header__menu__item" href="#project">Project</a></li>
+      <li><a class="header__menu__item" href="#careerEducation">Career & Edu</a></li>
+      <!-- <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li> -->
+      <li><a class="header__menu__item" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="header__toggle" aria-label="navigation menu toggle">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</header>
+<!-- Main -->
+<main>
+  <!-- Home -->
+  <section id="home">
+    <div class="home__container">
+      <img class="home__avatar" src="images/profile.png" alt="Jihoon's profile">
+      <h2 class="home__title" aria-label="Hello, I'm Great Coder Jihoon">Hello <br />I&#39;m <strong class="home__title--strong">Great Coder</strong>, Jihoon</h2>
+      <p class="home__description">A software engineer currently residing in Seoul, South Korea</p>
+      <a class="home__contact" href="#contact">Contact Me</a>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="section max-container">
+    <h2 class="title">About Me</h2>
+    <p class="introduce">안녕하세요. 저는 웹 개발자 신지훈입니다.<br>전 회사에서 학습 컨텐츠개발을 위주로 개발해왔으며, 현재 프론트엔드 기술과<br> 백엔드 기술을 중점적으로 학습 중 입니다. 저의 사이트를 찾아주셔서 감사합니다.</p>
+    <ul class="majors">
+      <li class="major">
+        <i class="fa-brands fa-html5 major__icon"></i>
+        <p class="major__title">Front-end</p>
+        <p>HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</p>
+      </li>
+      <li class="major">
+        <i class="fa-solid fa-mobile major__icon"></i>
+        <p class="major__title">Mobile</p>
+        <p>HTML, CSS, JavaScript, TypeScript, React, Android, Ios, React Native</p>
+      </li>
+      <li class="major">
+        <i class="fa-solid fa-server major__icon"></i>
+        <p class="major__title">Back-end</p>
+        <p>Java, JavaScript, NodeJs, Rest APIs, MySQL</p>
+      </li>
+    </ul>
+    <ul class="jobs">
+      <li class="job">
+        <img src="images/jobs/logo.png" alt="google logo" />
+         <div>
+            <p class="job__name">Minigate as Junior & contents Software Engineer</p>
+            <p class="job__period">2022.12 - 2024.06</p>
+         </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Skills -->
+  <section id="skills" class="section">
+  <div class="max-container">
+    <h2 class="title">My Skills</h2>
+    <p class="description">Skills & Attributes</p>
+    <div class="skills">
+      <section class="skills__coding">
+        <h3 class="skills__title">Coding Skills</h3>
+        <ul>
+          <li class="bar">
+            <div class="bar_metadata">
+              <span>HTML5 <i class="fa-brands fa-html5"></i></span><span>98%</span>
+            </div>
+            <div class="bar_bg">
+              <div class="bar_value" style="width: 98%"></div>
+            </div>
+          </li>
+          <li class="bar">
+            <div class="bar_metadata">
+              <span>CSS3 <i class="fa-brands fa-css3-alt"></i></span><span>90%</span>
+            </div>
+            <div class="bar_bg">
+              <div class="bar_value" style="width: 90%"></div>
+            </div>
+          </li>
+          <li class="bar">
+            <div class="bar_metadata">
+              <span>JavaScript(ES6+) <i class="fa-brands fa-square-js"></i></span><span>90%</span>
+            </div>
+            <div class="bar_bg">
+              <div class="bar_value" style="width: 90%"></div>
+            </div>
+          </li>
+          <li class="bar">
+            <div class="bar_metadata">
+              <span>TypeScript <i class="fa-solid fa-t"></i></span><span>68%</span>
+            </div>
+            <div class="bar_bg">
+              <div class="bar_value" style="width: 68%"></div>
+            </div>
+          </li>
+          <li class="bar">
+            <div class="bar_metadata">
+              <span>React.js <i class="fa-brands fa-react"></i></span><span>79%</span>
+            </div>
+            <div class="bar_bg">
+              <div class="bar_value" style="width: 79%"></div>
+          </div>
+          </li>
+          <li class="bar">
+            <div class="bar_metadata">
+              <span>Vue.js <i class="fa-brands fa-vuejs"></i></span><span>68%</span>
+            </div>
+            <div class="bar_bg">
+              <div class="bar_value" style="width: 68%"></div>
+          </div>
+          </li>
+        </ul>
+      </section>
+      <section class="skills__tools">
+        <h3 class="skills__title">Tools</h3>
+        <ul>
+          <li>Zeplin</li>
+          <li>Visual Studio Code</li>
+          <li>Photo Shop</li>
+          <li>Xd</li>
+          <li>Figma</li>
+        </ul>
+      </section>
+      <section class="skills__etc">
+        <h3 class="skills__title">Etc</h3>
+        <ul>
+          <li>Git</li>
+          <li>Github</li>
+          <li>Svn</li>
+          <li>AWS - S3</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  </section>
+  <!-- Work -->
+  <section id="work" class="section max-container">
+    <h2 class="title">My Work</h2>
+    <p class="description">Works</p>
+    <div class="swiper mySwiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img src="images/works/work1.webp" alt="">
+          <h2 class="work-title">비상사회 컨텐츠 퍼블리싱</h2>
+          <p class="work-period">2021. 12~ 2022.03</p>
+          <p class="work-explanation">html, css, javascript 를 사용하여 태블릿사이즈의 초등학생 교육용 컨텐츠를 저를 포함한 팀원 2명이서 퍼블리싱 하였음.</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#CSS</li>
+            <li>#JavaScript</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work2.webp" alt="">
+          <h2 class="work-title">LG 인터북</h2>
+          <p class="work-period">2022.04~2022.08</p>
+          <p class="work-explanation">자바스크립트의 프레임워크인 뷰와 라이브러리인 pixi js를 사용하여 만들어진 모듈에서 양산 작업을 하였음.</p>
+          <ul class="work-skills">
+            <li>#Vue.js</li>
+            <li>#Pixi.js</li>
+            <li>#Node.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work3.webp" alt="">
+          <h2 class="work-title">능률교육 컨텐츠 개발</h2>
+          <p class="work-period">2021. 12~ 2022.03</p>
+          <p class="work-explanation">자바스크립트의 라이브러리인 pixi js를 사용하여 팀원으로써 태블릿 안에 들어가는 모듈 3개를 만들었으며, 양산 작업을 하였음</p>
+          <ul class="work-skills">
+            <li>#Vue.js</li>
+            <li>#Pixi.js</li>
+            <li>#Node.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work4.webp" alt="">
+          <h2 class="work-title">쓰기모듈 개발</h2>
+          <p class="work-period">2023.04~2023.06</p>
+          <p class="work-explanation">vue js를 사용하여 쓰기 컴포넌트별로 기능을 나누고 컨텐츠의 화면 단을 작업 하였음.</p>
+          <ul class="work-skills">
+            <li>#Vue.js</li>
+            <li>#Node.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work5.webp" alt="">
+          <h2 class="work-title">능률 전자저작물 개발</h2>
+          <p class="work-period">2023.06~ 2023.09</p>
+          <p class="work-explanation">vue js를 사용하여 팀원들과 함께 저작도구를 개발하여 전자저작물 책 3권을 만들었음.</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#CSS</li>
+            <li>#Vue.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work6.webp" alt="">
+          <h2 class="work-title">밀리의 서재 epub3</h2>
+          <p class="work-period">2023.06~ 2023.09</p>
+          <p class="work-explanation">html, css, javascript 를 사용하여 밀리의서재의 책 1권을 개발함</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#CSS</li>
+            <li>#JavaScript</li>
+            <li>#반은형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work7.webp" alt="">
+          <h2 class="work-title">아람 스쿨 컨텐츠 개발 및 검수페이지 개발</h2>
+          <p class="work-period">2023.09~2024.06</p>
+          <p class="work-explanation">자바스크립트의 라이브러리인 pixi js를 사용하여 모듈 4개를 개발 하였으며, 양산 작업을 하였음. 추가로 검수페이지 화면단을 퍼블리싱 하였음.</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#Vue.js</li>
+            <li>#Pixi.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work8.webp" alt="">
+          <h2 class="work-title">아람 스쿨 컨텐츠 개발 및 검수페이지 개발</h2>
+          <p class="work-period">2023.09~2024.06</p>
+          <p class="work-explanation">자바스크립트의 라이브러리인 pixi js를 사용하여 모듈 4개를 개발 하였으며, 양산 작업을 하였음. 추가로 검수페이지 화면단을 퍼블리싱 하였음.</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#Vue.js</li>
+            <li>#Pixi.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work9.webp" alt="">
+          <h2 class="work-title">아람 스쿨 컨텐츠 개발 및 검수페이지 개발</h2>
+          <p class="work-period">2023.09~2024.06</p>
+          <p class="work-explanation">자바스크립트의 라이브러리인 pixi js를 사용하여 모듈 4개를 개발 하였으며, 양산 작업을 하였음. 추가로 검수페이지 화면단을 퍼블리싱 하였음.</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#Vue.js</li>
+            <li>#Pixi.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+        <li class="swiper-slide">
+          <img src="images/works/work10.webp" alt="">
+          <h2 class="work-title">아람 스쿨 컨텐츠 개발 및 검수페이지 개발</h2>
+          <p class="work-period">2023.09~2024.06</p>
+          <p class="work-explanation">자바스크립트의 라이브러리인 pixi js를 사용하여 모듈 4개를 개발 하였으며, 양산 작업을 하였음. 추가로 검수페이지 화면단을 퍼블리싱 하였음.</p>
+          <ul class="work-skills">
+            <li>#HTML</li>
+            <li>#Vue.js</li>
+            <li>#Pixi.js</li>
+            <li>#반응형웹</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="swiper-btnPage">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Project -->
+  <section id="project" class="section">
+   <div class="max-container">
+    <h2 class="title">My project</h2>
+    <p class="description">Projects</p>
+    <ul class="categories">
+      <li>
+        <button class="category category--selected" data-category="all">
+          All <span class="category__count">7</span>
+        </button>
+      </li>
+      <li>
+        <button class="category" data-category="Responsive Web">
+          Responsive Web <span class="category__count">4</span>
+        </button>
+      </li>
+      <li>
+        <button class="category" data-category="React">
+          React <span class="category__count">2</span>
+        </button>
+      </li>
+      <li>
+        <button class="category" data-category="Game">
+          Game <span class="category__count">1</span>
+        </button>
+      </li>
+    </ul>
+    <ul class="projects">
+      <li class="project" data-type="Responsive Web">
+        <a href="#" target="_blank">
+          <img 
+            src="images/projects/project1.webp" 
+            alt="project1" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #1</h3>
+            <p>New Portfolio with HTML, CSS, JS</p>
+          </div>
+        </a>
+      </li>
+      <li class="project" data-type="Responsive Web">
+        <a href="https://tlswlgns14.github.io/shinjihoonpotporio/" target="_blank">
+          <img 
+            src="images/projects/project2.webp" 
+            alt="project2" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #2</h3>
+            <p>Portfolio with HTML, CSS, JS</p>
+          </div>
+        </a>
+      </li>
+      <li class="project" data-type="Responsive Web">
+        <a href="https://tlswlgns14.github.io/stoftzone-t1/" target="_blank">
+          <img 
+            src="images/projects/project3.webp" 
+            alt="project3" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #3</h3>
+            <p>Clone Coding with HTML, CSS, JS</p>
+          </div>
+        </a>
+      </li>
+      <li class="project" data-type="Responsive Web">
+        <a href="http://tlswlgns14.dothome.co.kr/tesla/" target="_blank">
+          <img 
+            src="images/projects/project4.webp" 
+            alt="project4" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #4</h3>
+            <p>Clone Coding Renewal with HTML, CSS, JS</p>
+          </div>
+        </a>
+      </li>
+      <li class="project" data-type="React">
+        <a href="https://tlswlgns14.github.io/airbnb10/#/" target="_blank">
+          <img 
+            src="images/projects/project5.webp" 
+            alt="project5" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #6</h3>
+            <p>Clone Coding Renewal with React.Js</p>
+          </div>
+        </a>
+      </li>
+      <li class="project" data-type="React">
+        <a href="#" target="_blank">
+          <img 
+            src="images/projects/project6.webp" 
+            alt="project6" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #7</h3>
+            <p>TodoList with React.Js</p>
+          </div>
+        </a>
+      </li>
+      <li class="project" data-type="Game">
+        <a href="https://tlswlgns14.github.io/chapter4-Carrotgame/" target="_blank">
+          <img 
+            src="images/projects/project7.webp" 
+            alt="project7" 
+            class="project__img"
+          />
+          <div class="project__metadata">
+            <h3 class="project__title">Project #8</h3>
+            <p>Carrot Game with HTML, CSS, JS</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+   </div>
+  </section>
+  <!-- Career & Education -->
+  <section id="careerEducation" class="section max-container">
+    <h2 class="title">Career & Education</h2>
+    <p class="description">My career</p>
+    <ul class="careerEducations">
+      <li class="careerEducation">
+        <img src="images/careereducation/minigate.webp" alt="minigate" class="careerEducation__img">
+        <div class="careerEducation__bubble">
+          <p class="careerEducation__explanation">저는 미니게이트에서 교육용 콘텐츠를 만드는 업무를 주로 맡아왔습니다.
+            다양한 프로젝트에 적극 참여하고, 실력을 향상하며 동료와 협업하여 효과적인 결과물을 만들어내 왔습니다.
+            총 2년 7개월이라는 시간 동안 한 회사에서 총 6개의 큰 프로젝트를 진행해오면서 많은 발전을 한 것 같습니다.
+          </p>
+          <p>
+            <a href="https://www.minigate.net/" class="careerEducation__bubble__name">(주) 미니게이트</a>
+              /2021.12 - 2024.06 퇴사
+          </p>
+        </div>
+      </li>
+    </ul>
+    <p class="description">My Education</p>
+    <ul class="careerEducations">
+      <li class="careerEducation">
+        <img src="images/careereducation/qnet.webp" alt="qnet" class="careerEducation__img">
+        <div class="careerEducation__bubble">
+          <p class="careerEducation_explanation">비전공자인 저는 하드웨어 및 소프트웨어의 cs지식, 현행 시스템 분석 및 요구사항, 알고리즘, 통합구현, 소프트웨어 요구사항 분석 기법등 견문을 넓히기 위해 개발자 역량에 필수인 정보처리기사를 준비하여 취득하였습니다.
+          </p>
+          <p>
+            <a href="https://www.q-net.or.kr/man001.do?gSite=Q" class="careerEducation__bubble__name">한국산업인력공단</a>
+              /정보처리기사 취득 2024.06
+          </p>
+        </div>
+      </li>
+      <li class="careerEducation">
+        <img src="images/careereducation/gangnam.webp" alt="gangnam" class="careerEducation__img">
+        <div class="careerEducation__bubble">
+          <p class="careerEducation_explanation">약 6개월간 그린컴퓨터아카데미에서 UI/UX디자인 웹 프런트엔드 개발자 양성과정을 수강했습니다. 해당 과정에서 HTML과 CSS, JQuery의 Plug-in 사용법, Javascript 등 을 배웠습니다. HTML로 레이아웃, CSS의 속성들을 이해하고 Javascript의 속성 메서드 등을 이해하며, 동적인 표현을 할 수 있게 되었습니다.
+          </p>
+          <p>
+            <a href="https://gangnam.greenart.co.kr/" class="careerEducation__bubble__name">그린컴퓨터아카데미</a>
+              /프론트엔드 개발자 과정 이수 2021.11
+          </p>
+        </div>
+      </li>
+      <li class="careerEducation">
+        <img src="images/careereducation/seowon.webp" alt="seowon" class="careerEducation__img">
+        <div class="careerEducation__bubble">
+          <p class="careerEducation_explanation">재학시절 저는 컴퓨터 공학이 아닌 예술 쪽이었으나 개발에 흥미를 느끼고 관심을 갖게 되어 프로그래밍 쪽으로 뛰어들게 되었습니다. 앞으로 더욱 성장해 나갈 것입니다.
+          </p>
+          <p>
+            <a href="https://www.seowon.ac.kr/seowon/index.do" class="careerEducation__bubble__name">청주 서원대학교</a>
+              /한국화 일러스트학과 졸업 2019.01
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Testimonial -->
+  <!-- <section id="testimonial" class="section max-container">
+    <h2 class="title">Testimonial</h2>
+    <p class="description">See what they say about me</p>
+    <ul class="testimonials">
+      <li class="testimonial">
+        <img src="images/testimonials/people1.webp" alt="people1" class="testimonial__img">
+        <div class="testimonial__bubble">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores tempora quam, nesciunt sunt consequatur quibusdam ipsam quia laudantium sed neque quidem nam fuga id quaerat debitis excepturi libero et?
+          </p>
+          <p>
+            <a href="#" class="testimonial__bubble__name">James Kim</a>
+             /Google
+          </p>
+        </div>
+      </li>
+      <li class="testimonial">
+        <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img">
+        <div class="testimonial__bubble">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores tempora quam, nesciunt sunt consequatur quibusdam ipsam quia laudantium sed neque quidem nam fuga id quaerat debitis excepturi libero et?
+          </p>
+          <p>
+            <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+             /Samsung
+          </p>
+        </div>
+      </li>
+      <li class="testimonial">
+        <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img">
+        <div class="testimonial__bubble">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste maiores tempora quam, nesciunt sunt consequatur quibusdam ipsam quia laudantium sed neque quidem nam fuga id quaerat debitis excepturi libero et?
+          </p>
+          <p>
+            <a href="#" class="testimonial__bubble__name">Anna Jin</a>
+             /Samsung
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section> -->
+  <!-- Arrow up -->
+  <aside>
+    <a class="arrow-up" href="#home" title="back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </aside>
+</main>
+<!-- Footer -->
+<footer id="contact" class="section">
+ <div class="max-container">
+  <h2 class="title">Thank you for visiting</h2>
+  <p class="introduce">tlswlgns14@naver.com</p>
+  <ul class="contact_links">
+    <li>
+      <a
+        class="contact__link" 
+        href="https://github.com/tlswlgns14" 
+        target="_blank" 
+        title="my github link"
+       >
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a 
+        class="contact__link" 
+        href="https://github.com/tlswlgns14" 
+        target="_blank"
+        title="my linkedin link"
+        >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </li>
+  </ul>
+  <div class="contact_qr">
+    <img src="images/qr.png" alt="">
+  </div>
+  <p>©️Professional Coder, Jihoon - All rights reserved</p>
+ </div>
+</footer>
+</body>
+</html>

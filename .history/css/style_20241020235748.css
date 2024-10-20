@@ -413,27 +413,27 @@ button:focus {
   100%{ transform:translateX(5px)}  
 }
 
-.swiper-btnPage .swiper-button-prev,
-.swiper-btnPage .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: var(--color-gray) !important;
   opacity: 0.5;
 }
 
-.swiper-btnPage .swiper-button-prev {
+.swiper-button-prev {
   animation: left 0.5s infinite alternate linear;
 }
 
-.swiper-btnPage .swiper-button-next {
+.swiper-button-next {
   animation: right 0.5s infinite alternate linear;
 }
 
-.swiper-btnPage .swiper-button-prev::after,
-.swiper-btnPage .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-size: 3rem !important;
   font-weight: bold !important;
 }
 
-.swiper-btnPage .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   background-color: rgba(27, 30, 38, 0.606) !important;
 }
 
@@ -803,18 +803,13 @@ button:focus {
   .category {
     width: 100%;
   }
-
-  .swiper-btnPage {
+  .swiper-button-prev {
     position: relative;
-  }
-
-  .swiper-btnPage .swiper-button-prev {
-    position: absolute;
-    top:-25px;
+    top:-105px;
     left: 12px;
   }
-  .swiper-btnPage .swiper-button-next {
-    position: absolute;
+ .swiper-button-next {
+  position: relative;
     top:-25px;
     right: 12px;
   }

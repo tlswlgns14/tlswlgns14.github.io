@@ -397,7 +397,7 @@ button:focus {
 }
 
 .swiper-slide img {
-  width: 80%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -431,6 +431,9 @@ button:focus {
 .swiper-btnPage .swiper-button-next::after {
   font-size: 3rem !important;
   font-weight: bold !important;
+  position: relative;
+  top: 0;
+  left: -10px;
 }
 
 .swiper-btnPage .swiper-pagination-bullet-active {

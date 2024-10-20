@@ -397,7 +397,7 @@ button:focus {
 }
 
 .swiper-slide img {
-  width: 80%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -809,12 +809,12 @@ button:focus {
   }
 
   .swiper-btnPage .swiper-button-prev {
-    position: absolute;
+    /* position: absolute; */
     top:-25px;
-    left: 12px;
+    left: 10px;
   }
   .swiper-btnPage .swiper-button-next {
-    position: absolute;
+    /* position: absolute; */
     top:-25px;
     right: 12px;
   }

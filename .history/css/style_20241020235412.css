@@ -397,7 +397,7 @@ button:focus {
 }
 
 .swiper-slide img {
-  width: 80%;
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -413,22 +413,22 @@ button:focus {
   100%{ transform:translateX(5px)}  
 }
 
-.swiper-btnPage .swiper-button-prev,
-.swiper-btnPage .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: var(--color-gray) !important;
   opacity: 0.5;
 }
 
-.swiper-btnPage .swiper-button-prev {
+.swiper-button-prev {
   animation: left 0.5s infinite alternate linear;
 }
 
-.swiper-btnPage .swiper-button-next {
+.swiper-button-next {
   animation: right 0.5s infinite alternate linear;
 }
 
-.swiper-btnPage .swiper-button-prev::after,
-.swiper-btnPage .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-size: 3rem !important;
   font-weight: bold !important;
 }
